@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dongle:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+
+button {
+  padding: 5px 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-family: "Dongle", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+}
+
+.communSection {
+  padding: 25px;
+  background-color: indianred;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.section {
+  padding: 0 50px;
+  margin-left: 125px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.title {
+  font-size: 60px;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 25px;
+  background-color: #838383;
+  width: 97%;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.content img {
+  width: 225px;
+}
+
+.randomSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rmSection {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.rmSection-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.rmSection-content img {
+  width: 225px;
+}
+
+.fsSection {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.fsSection-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.fsSection-content img {
+  width: 225px;
+}
+
+.singleSection {
+  padding-top: 25px;
+}
+.singleSection .singleSection-content {
+  width: 100%;
+}
+.singleSection .singleSection-content .singleHeader {
+  width: 100%;
+  display: flex;
+}
+.singleSection .singleSection-content .singleHeader .singleName:nth-of-type(1) {
+  font-size: 60px;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  color: white;
+  margin-left: 100px;
+}
+.singleSection .singleSection-content .singleHeader img {
+  width: 300px;
+}
+.singleSection .singleSection-content .singleHeader .singleSpecs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 75px;
+  margin-top: 50px;
+}
+.singleSection .singleSection-content .singleHeader .singleSpecs p {
+  font-size: 24px;
+  font-family: "Dongle", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.singleSection .singleSection-content .singleContent {
+  font-size: 24px;
+  font-family: "Dongle", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 15px;
+  display: flex;
+  margin-top: 60px;
+}
+.singleSection .singleSection-content .singleContent-title {
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.singleSection .singleSection-content .singleContent .contentLeft {
+  width: 50%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.singleSection .singleSection-content .singleContent .contentRight {
+  width: 50%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.singleSection .singleSection-content .singleContent .contentRight .episodeCard {
+  padding: 10px 10px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.singleEpisodeSection {
+  flex-direction: column;
+  padding-top: 50px;
+}
+.singleEpisodeSection-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.singleEpisodeSection-content > div {
+  width: 100%;
+}
+.singleEpisodeSection-content > div .singleHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 60px;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  color: white;
+  font-size: 50px;
+}
+.singleEpisodeSection-content > div .singleHeader .singleName {
+  font-size: 24px;
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+.singleEpisodeSection-content > div .allChars {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.singleEpisodeSection-content > div .allChars .episodeCharacter {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px 10px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.card {
+  cursor: pointer;
+}
+.card-name {
+  font-size: 24px;
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+
+.returnHome {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dongle:wght@300;400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin font-title{
+  font-size: 60px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  color: white;
+}
+
+@mixin font-name{
+  font-size: 24px;
+  font-family: 'Dongle', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  //font-weight: 300;
+}
+
+@mixin font-text{
+  font-size: 24px;
+  font-family: 'Dongle', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+}
+
+body{
+  background-color: #333;
+}
+
+button{
+  padding: 5px 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  @include font-text;
+}
+
+.communSection{
+  padding: 25px;
+  background-color: indianred;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.section{
+  padding: 0 50px;
+  margin-left: 125px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.title{
+  @include font-title;
+  margin-bottom: 25px;
+  background-color: #838383;
+  width: 97%;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  img {
+    width: 225px;
+  }
+}
+
+.randomSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rmSection{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  &-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    img{
+      width: 225px;
+    }
+  }
+}
+
+.fsSection{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  &-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    img{
+      width: 225px;
+    }
+  }
+}
+
+.singleSection{
+  padding-top: 25px;
+  .singleSection-content{
+    width: 100%;
+    .singleHeader{
+      width: 100%;
+      display: flex;
+      .singleName:nth-of-type(1){
+        @include font-title;
+        margin-left: 100px;
+      }
+      img{
+        width: 300px;
+      }
+      .singleSpecs{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 75px;
+        margin-top: 50px;
+        p{
+          @include font-text;
+          color: white;
+          font-size: 30px;
+          margin-bottom: 15px;
+        }
+      }
+
+    }
+    .singleContent{
+      @include font-text;
+      color: white;
+      font-size: 30px;
+      margin-bottom: 15px;
+      display: flex;
+      margin-top: 60px;
+      &-title{
+        font-size: 40px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+      }
+      .contentLeft {
+        width: 50%;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .contentRight{
+        width: 50%;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        .episodeCard{
+          padding: 10px 10px;
+          background-color: lightgrey;
+          border-radius: 10px;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+}
+
+.singleEpisodeSection{
+  flex-direction: column;
+  padding-top: 50px;
+
+  &-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    >div{
+      width: 100%;
+      .singleHeader{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include font-title;
+        font-size: 50px;
+        .singleName{
+          @include font-name;
+          font-size: 40px;
+        }
+      }
+      .allChars{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .episodeCharacter{
+          width: 500px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          padding: 10px 10px;
+          background-color: lightgrey;
+          border-radius: 10px;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.card{
+  cursor: pointer;
+  &-name{
+    @include font-name;
+  }
+}
+
+.returnHome{
+  display: none;
+}
